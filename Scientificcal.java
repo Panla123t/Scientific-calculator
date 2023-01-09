@@ -150,7 +150,7 @@ public class Scientificcal {
         for (int i = 0; i < main.length; i++) {
             sum += Math.pow(((main[i]) - (mean)), 2);
         }
-        sum /= (n - 1);
+        sum /= (n);
         sum = Math.sqrt(sum);
         System.out.print("Stdev = " + sum);
     }
@@ -174,7 +174,7 @@ public class Scientificcal {
         for (int i = 0; i < main.length; i++) {
             sum += Math.pow(((main[i]) - (mean)), 2);
         }
-        sum /= (n);
+        sum /= (n-1);
         sum = Math.sqrt(sum);
         System.out.print("Stdev = " + sum);
     }
