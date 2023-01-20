@@ -3,30 +3,26 @@ import java.lang.Math;
 public class Scientificcal {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        while(true){
         menu();
         int x = sc.nextInt();
         if (x == 1) {
             mean();
-            menu();
         } else if (x == 2) {
             fibonacci();
-            menu();
         } else if (x == 3) {
             log();
-            menu();
         } else if (x == 4) {
             Cnr();
-            menu();
         } else if (x == 5) {
             Pnr();
-            menu();
         } else if (x == 6) {
             Stdevpop();
-            menu();
         } else if (x == 7) {
             Stdevex();
-            menu();
-        } 
+        } else if (x == 8) {
+            break;
+        }
 
     }
     public static void menu() {
@@ -43,6 +39,9 @@ public class Scientificcal {
         System.out.println("8.) Exit ");
         System.out.println("Choose the function : ");
     }
+
+}
+        
     public static void mean() {
         Scanner sc = new Scanner(System.in);
         System.out.println("How many numbers? : ");
